@@ -31,19 +31,16 @@
 
   header {
     background-image: url(./img/c-Recuperado.jpg);
-    text-align: center  ;
+    text-align: center;
     /*background-color: #333;*/
     /*background-image: url(/img/d.jpg);*/
     box-shadow: 2px 4px 10px 3px rgba(0, 0, 0, 0.3);
     font-size: 25px;
-    letter-spacing: 3px;
-    color: rgb(255, 255, 255);
-    font-style:unset;
-    
     padding: 1em;
   }
 
   .logo{
+    
     width: 300px;
 
   }
@@ -79,7 +76,7 @@
   }
 
   .item1 p{
-    font-size: 45px;
+    font-size: 3rem;
 
   }
   .item2 {
@@ -97,7 +94,7 @@
 
 
   .item2 p{
-    font-size: 45px;
+    font-size: 3rem;
 
   }
 
@@ -245,3 +242,118 @@
   }
 
   /*Efects*/
+/*RESPONSIVE MOBILE*/
+
+@media screen and (max-width: 850px){
+  
+  button{
+    height: 60px;
+    width: 330px;
+    border: none;
+    border-radius: 15px;
+    background: #353965;
+    letter-spacing: 3px;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 2px 4px 1px 3px #a066cb;
+   
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+   
+  }
+
+  .item1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .item2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .item3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .item4 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  
+  .item5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  
+  .item6 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  
+  .item7 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  
+  .item8 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  
+  .item9 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  
+  .item10 {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+  
+  .item11 {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+  
+  .item12 {
+   /* grid-column: 3 / */
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+}
+
+ .item13 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+  }
+
+ .item14 {
+    grid-column: 2 / 3;
+    grid-row: 7/ 8;
+  }
+  
+  .item15 {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+  }
+
+  .item16 {
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+  } 
+  
+  .item17 {
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+  }
+
+  .item18 {
+    grid-column: 2 / 3;
+    grid-row: 9 / 10;
+  }
+
+}
